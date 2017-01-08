@@ -32,7 +32,7 @@ The node-gotapi-plugin-onvif packages a sample web application "onvif-manager". 
 
 ```
 $ cd ~/node_modules/node-gotapi-plugin-onvif/html
-$ cp -rf ./onvif-manager ~/node_modules/node-gotapi/html
+$ cp -r ./onvif-manager ~/node_modules/node-gotapi/html/
 ```
 
 Restart the node-gotapi in order to load the `node-gotapi-plugin-onvif`. You can access this sample application at:
