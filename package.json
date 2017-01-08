@@ -1,0 +1,35 @@
+{
+  "name": "node-gotapi-plugin-onvif",
+  "version": "0.0.1",
+  "description": "This module is an ONVIF Plug-In for the node-gotapi.",
+  "main": "./index.js",
+  "files": [
+    "html"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GotAPI",
+    "OMA",
+    "Generic Open Terminal API Framework",
+    "Open Mobile Alliance",
+    "ONVIF",
+    "Camera",
+    "Network Camera",
+    "Security Camera",
+    "Baby Camera",
+    "PTZ"
+  ],
+  "homepage": "https://github.com/futomi",
+  "author": "Futomi Hatano <futomi.hatano@gmail.com> (https://github.com/futomi)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futomi/node-gotapi-plugin-onvif.git"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "node-onvif": ">=0.0.5"
+  }
+}
