@@ -1,6 +1,6 @@
 {
   "name": "node-gotapi-plugin-onvif",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This module is an ONVIF Plug-In for the node-gotapi.",
   "main": "./index.js",
   "files": [

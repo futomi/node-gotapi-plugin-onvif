@@ -28,11 +28,11 @@ $ npm install node-gotapi-plugin-onvif
 ---------------------------------------
 ## <a name="Sample application">Sample application</a>
 
-The node-gotapi-plugin-onvif packages a sample web application "onvif-manager". You can find the "onvif-manager" in the `html` directory of the node-gotapi-plugin-onvif. Copy the "`onvif-manager`" directory to the document root of the Web Server for front-end application of the node-gotapi.
+The node-gotapi-plugin-onvif packages a sample web application "onvif-manager". You can find the "onvif-manager" in the `html` directory of the node-gotapi-plugin-onvif. Copy the "`onvif-manager`" directory to the document root of the Web Server for front-end application of the node-gotapi. If the node-gotapi is installed at `~/node-gotapi`:
 
 ```
 $ cd ~/node_modules/node-gotapi-plugin-onvif/html
-$ cp -a ./onvif-manager ~/node_modules/node-gotapi/html/onvif-manager
+$ cp -a ./onvif-manager ~/node-gotapi/html/onvif-manager
 ```
 
 Restart the node-gotapi in order to load the `node-gotapi-plugin-onvif`. You can access this sample application at:
