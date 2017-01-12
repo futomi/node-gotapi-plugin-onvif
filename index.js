@@ -3,7 +3,7 @@
 *
 * Copyright (c) 2017, Futomi Hatano, All rights reserved.
 * Released under the MIT license
-* Date: 2017-01-08
+* Date: 2017-01-12
 * ---------------------------------------------------------------- */
 'use strict';
 
@@ -17,10 +17,8 @@ let GotapiPlugin = function(util) {
 		name: 'ONVIF Network Camera',
 		services: []
 	};
-	this.ticktack_timer_id = 0;
 	this.onvif = require('node-onvif');
 	this.devices = {};
-	this.services = [];
 	this.last_request_time = 0;
 
 	this.service_tmpl = {
@@ -29,7 +27,7 @@ let GotapiPlugin = function(util) {
 		online      : true,
 		scopes      : ['onvif'],
 		manufacturer: '',
-		version     : '0.0.1',
+		version     : '0.0.5',
 		type        : ''
 	};
 };
@@ -48,8 +46,8 @@ GotapiPlugin.prototype.init = function(callback) {
 };
 
 GotapiPlugin.prototype._startDiscoveryBackground = function() {
-	var now = Date.now();
-	var t = 60000 - (now - this.last_request_time);
+	let now = Date.now();
+	let t = 60000 - (now - this.last_request_time);
 	if(t > 0) {
 		setTimeout(this._startDiscoveryBackground.bind(this), t);
 		return;
